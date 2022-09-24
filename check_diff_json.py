@@ -19,8 +19,7 @@ def display_diference(src_json1, src_json2):
     diff_result = difflib.ndiff(convJsonToList(src_json1), convJsonToList(src_json2))
     #Extract and display the difference.
     for line in diff_result:
-        if line[0:1] in ["+", "-"]:
-            print(line)
+        print(line)
 
 if __name__ == "__main__":
     presentJson = select_json.presentJson()
